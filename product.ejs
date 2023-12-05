@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Product</title>
+</head>
+<body>
+    <h1>Products ....</h1>
+    <table border="1px">
+        <tr>
+            <td>id</td>
+            <td>Name</td>
+            <td>Price</td>
+        </tr>
+        <% for(let i = 0; i<products.length; i++)  { %>
+            <tr>
+               <td> <%= i %></td>
+               <td> <%= products[i].name %></td>
+               <td> <%= products[i].price %></td>
+            </tr>
+         <% } %> 
+        
+    </table>
+</body>
+</html>
